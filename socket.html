@@ -10,6 +10,7 @@
     $('#date').text(data.date);
   });
 
+
   $(document).ready(function(){
     $('#text').keypress(function(e){
       socket.emit('client_data', {'letter': String.fromCharCode(e.charCode)});
